@@ -1,10 +1,16 @@
-from mimetypes import inited
-
-git config --global user.name "bekkadyr"
+Команды для регистрации ваших данных
+git config --global user.name "bekkadyrmambetov"
 git config --global user.email "bekkadyr.mambetov@alatoo.edu.kg"
 
-git init
-git remote add origin https://github.com/bekkadyrmambetov-del/OOP-59.git
+Команды один раз на проект
+
+git init                    | Команда для инициализации репозитория
+git remote add origin ваша ссылка  | Команда для добавления удаленного репозитория
+========================================================================================================================
 
 Команды для частого использования
-git status               \ Команда для проверки статуса репозитора
+
+git status                 | Команда для проверки статуса репозитория
+git add .                  | Выделяет все и добавляет файлы в буфер обмена
+git commit -m "сообщение"  | Команда для сохранения изменений в репозитории
+git push origin master     | Команда для отправки изменений в удалённый репозиторий
