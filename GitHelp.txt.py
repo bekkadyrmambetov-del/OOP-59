@@ -14,3 +14,17 @@ git status                 | Команда для проверки статус
 git add .                  | Выделяет все и добавляет файлы в буфер обмена
 git commit -m "сообщение"  | Команда для сохранения изменений в репозитории
 git push origin master     | Команда для отправки изменений в удалённый репозиторий
+
+
+
+
+git branch                 | Просмотр веток
+git branch main            | Create branch
+git switch branch_name   | Переключение на указанную ветку
+git checkout branch_name   | Переключение на указанную ветку
+git switch -c branch_name   | Создание и переключение на указанную ветку
+git checkout -b branch_name | Создание и переключение на указанную ветку
+git restore file_name       | Удаление ваших изменений до последнего коммита
+git reset file_name         | Удаление файла из буфера обмена
+git reset --mixed HEAD~1    | Удаление последнего коммита
+git merge branch_name       |  стягивание изменений из указанной ветки
