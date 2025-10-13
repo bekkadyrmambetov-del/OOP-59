@@ -40,28 +40,28 @@
 # print(kirito.action())
 # print(gendalf_silver.action())
 # print(niga.action())
+#
+# class A:
+#     def action(self):
+#         return "A"
+#
+#
+#
+# class B(A):
+#     def action(self):
+#         return super().action()
+#
+#
+# class C(A):
+#     def action(self):
+#         return "C"
+#
+#
+# class D(B,C):
+#     def action(self):
+#         return super().action()
 
-class A:
-    def action(self):
-        return "A"
-
-
-
-class B(A):
-    def action(self):
-        return super().action()
-
-
-class C(A):
-    def action(self):
-        return "C"
-
-
-class D(B,C):
-    def action(self):
-        return super().action()
-
-
-obj_1 = D()
-print(obj_1.action())
+#
+# obj_1 = D()
+# print(obj_1.action())
 # print(D.mro())
