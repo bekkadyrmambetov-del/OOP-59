@@ -1,5 +1,3 @@
-import sqlite3
-
 def update_user(rowid, name=None, age=None, hobby=None):
     conn = sqlite3.connect('users.db')
     cursor = conn.cursor()
@@ -30,3 +28,23 @@ def update_user(rowid, name=None, age=None, hobby=None):
     conn.close()
 
     print(f"✅ Пользователь с rowid={rowid} обновлён.")
+
+
+
+
+
+    import sqlite3
+
+    def read_user_by_id(rowid):
+        conn = sqlite3.connect('users.db')
+        cursor = conn.cursor()
+
+        cursor.execute("SELECT rowid, name, age, hobby FROM users WHERE rowid = ?", (rowid,))
+        user = cursor.fetchone()
+
+        conn.close()
+
+        if user:
+            print(f"ID: {user[0]} | NAME: {user[1]} | AGE: {user[2]} | HOBBY: {user[3]}")
+        else:
+            print(f"❌ Пользователь с ID {rowid} не найден.")
